@@ -1,0 +1,15 @@
+﻿Console.WriteLine("Введите K1");
+int k1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите B1");
+int b1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите K2");
+int k2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите B2");
+int b2 = Convert.ToInt32(Console.ReadLine());
+double calculationsX = k1 - k2;
+double calculationsX1 = b1 - b2;
+if (calculationsX < 0) calculationsX = Math.Abs(calculationsX);
+else calculationsX = calculationsX * -1;
+calculationsX = calculationsX1 / calculationsX;
+double calculationsY = k2 * calculationsX + b2;
+Console.WriteLine("Координаты пересечения отрезков x = {0} y = {1}",calculationsX,calculationsY);
